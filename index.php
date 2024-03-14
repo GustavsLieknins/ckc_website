@@ -12,13 +12,25 @@ if($url == "/")
 {
     require "controllers/index.php";
 }
-if($url == "/kolektivi")
+else if($url == "/kolektivi")
 {
     require "controllers/kolektivi.php";
 }
-if($url == "/edit")
+else if($url == "/add")
+{
+    require "controllers/add.php";
+}
+else if($url == "/delete")
+{
+    require "controllers/delete.php";
+}
+else if($url == "/edit")
 {
     require "controllers/edit.php";
+}
+else
+{
+    require "controllers/index.php";
 }
 // echo "Page not found :(";
 
