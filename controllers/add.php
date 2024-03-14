@@ -10,7 +10,7 @@ if(isset($_GET["when"]) && isset($_GET["event"]) && isset($_GET["where"]))
     VALUES
     ('$_GET[when]', '$_GET[event]', '$_GET[where]');";
     $params = [];
-    // header("/");
+    header('Location: '. "/");
 }else{
     $query = "SELECT * FROM ckc_events";
     $params = [];
