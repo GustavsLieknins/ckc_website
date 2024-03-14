@@ -16,6 +16,10 @@ if($url == "/kolektivi")
 {
     require "controllers/kolektivi.php";
 }
+if($url == "/edit")
+{
+    require "controllers/edit.php";
+}
 // echo "Page not found :(";
 
 ?>

@@ -5,8 +5,6 @@ $config = require "config.php";
 
 
 
-
-
 $query = "SELECT * FROM ckc_events"; 
 $params = [];
 $db = new Database($config);
