@@ -21,6 +21,10 @@
             color: white;
             border: 1px solid black;
         }
+        button
+        {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -30,15 +34,15 @@
         <form>
             <label>
                 Date time (YYYY-DD-MM HH-MM-SS):
-                <input type="text" name="datetime">
+                <input type="text" name="datetime" value='<?= $events[0]["datetime"] ?>'>
             </label>
             <label>
                 Event:
-                <input type="text" name="event">
+                <input type="text" name="event" value='<?= $events[0]["event"] ?>'>
             </label>
             <label>
                 Place:
-                <input type="text" name="place">
+                <input type="text" name="place" value='<?= $events[0]["place"] ?>'>
             </label>
             <button name="id" value=<?= $_GET["id"] ?> >Make changes</button>
         </form>

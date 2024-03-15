@@ -20,6 +20,10 @@
             color: white;
             border: 1px solid black;
         }
+        button
+        {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
