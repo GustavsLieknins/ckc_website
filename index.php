@@ -28,6 +28,10 @@ else if($url == "/edit")
 {
     require "controllers/edit.php";
 }
+else if($url == "/add-kolektivi")
+{
+    require "controllers/add-kolektivi.php";
+}
 else
 {
     require "controllers/index.php";
