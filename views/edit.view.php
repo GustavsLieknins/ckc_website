@@ -27,6 +27,7 @@
         }
     </style>
 </head>
+<?php require "components/navbar.php" ?>
 <body>
     <h1>Press on any off them to edit</h1>
     <?php if(isset($_GET["id"])) { ?>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<?php require "components/navbar.php" ?>
 <body>
     <h1>Add events</h1>
     <form>

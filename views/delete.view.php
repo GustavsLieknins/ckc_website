@@ -26,6 +26,7 @@
         }
     </style>
 </head>
+<?php require "components/navbar.php" ?>
 <body>
     <h1>Press on any off them to delete em</h1>
     <form action="">

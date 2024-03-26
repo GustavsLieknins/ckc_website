@@ -14,6 +14,7 @@
     }
 </style>
 </head>
+<?php require "components/navbar.php" ?>
 <body>
 <h1>CKC kolektivi</h1>
 <table>

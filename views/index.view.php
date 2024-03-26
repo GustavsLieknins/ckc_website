@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
 </head>
+<?php require "components/navbar.php" ?>
 <body>
     <h1>Pasākumi Cēsīs</h1>
     <ul>

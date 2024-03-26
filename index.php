@@ -32,6 +32,10 @@ else if($url == "/add-kolektivi")
 {
     require "controllers/add-kolektivi.php";
 }
+else if($url == "/login")
+{
+    require "controllers/login.php";
+}
 else
 {
     require "controllers/index.php";
