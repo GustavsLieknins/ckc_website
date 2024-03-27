@@ -16,6 +16,12 @@
             <input type="text" name="description">
         </label>
         <button>Submit</button>
+        <?php if(isset($errors["name-empty"])){ ?>
+        <p class="invalid-data"><?= $errors["name-empty"] ?></p>
+        <?php } ?>
+        <?php if(isset($errors["name-long"])){ ?>
+        <p class="invalid-data"><?= $errors["name-long"] ?></p>
+        <?php } ?>
     </form>
 </body>
 </html>

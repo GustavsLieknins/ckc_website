@@ -31,26 +31,26 @@
 <body>
     <h1>Press on any off them to edit</h1>
     <?php if(isset($_GET["id"])) { ?>
-        <h1>Current result:  <?= $events[0]["datetime"], " / ", $events[0]["event"], " / ", $events[0]["place"] ?> </h1>
+        <h1>Current result:  <?= htmlspecialchars($events[0]["datetime"]), " / ", htmlspecialchars($events[0]["event"]), " / ", htmlspecialchars($events[0]["place"]) ?> </h1>
         <form>
             <label>
                 Date time (YYYY-DD-MM HH-MM-SS):
-                <input type="text" name="datetime" value='<?= $events[0]["datetime"] ?>'>
+                <input type="text" name="datetime" value='<?= htmlspecialchars($events[0]["datetime"]) ?>'>
             </label>
             <label>
                 Event:
-                <input type="text" name="event" value='<?= $events[0]["event"] ?>'>
+                <input type="text" name="event" value='<?= htmlspecialchars($events[0]["event"]) ?>'>
             </label>
             <label>
                 Place:
-                <input type="text" name="place" value='<?= $events[0]["place"] ?>'>
+                <input type="text" name="place" value='<?= htmlspecialchars($events[0]["place"]) ?>'>
             </label>
             <button name="id" value=<?= $_GET["id"] ?> >Make changes</button>
         </form>
     <?php }else{; ?>
     <form>
         <?php foreach($events as $event) { ?>
-            <button name="id" value=<?= $event["id"] ?> ><?= $event["event"] ?></button>
+            <button name="id" value=<?= $event["id"] ?> ><?= htmlspecialchars($event["event"]) ?></button>
         <?php }; ?>
     </form>
     <?php }; ?>

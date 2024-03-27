@@ -18,6 +18,12 @@
             <input type="text" name="where">
         </label>
         <button>Submit</button>
+        <?php if(isset($errors["any_input_empty"])){ ?>
+        <p class="invalid-data"><?= $errors["any_input_empty"] ?></p>
+        <?php } ?>
+        <?php if(isset($errors["any_input_long"])){ ?>
+        <p class="invalid-data"><?= $errors["any_input_long"] ?></p>
+        <?php } ?>
     </form>
 </body>
 </html>
