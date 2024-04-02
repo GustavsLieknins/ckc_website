@@ -36,6 +36,14 @@ else if($url == "/login")
 {
     require "controllers/login.php";
 }
+else if($url == "/deleteKolektiv")
+{
+    require "controllers/kolektivi-delete.php";
+}
+else if($url == "/show")
+{
+    require "controllers/show.php";
+}
 else
 {
     require "controllers/index.php";

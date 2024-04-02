@@ -39,7 +39,6 @@
         <a href="/delete">Delete</a>
         <a href="/edit">Edit</a>
         <a href="/add-kolektivi">Add kolektivus</a>
-        <a href="/login">Login</a>
-        <a href="/register">Register</a>
+        <a href="/deleteKolektiv">Delete Kolektiv</a>
     </nav>
 </header>
