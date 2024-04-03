@@ -44,6 +44,10 @@ else if($url == "/show")
 {
     require "controllers/show.php";
 }
+else if($url == "/show_kolektivi")
+{
+    require "controllers/show-kolektivi.php";
+}
 else
 {
     require "controllers/index.php";

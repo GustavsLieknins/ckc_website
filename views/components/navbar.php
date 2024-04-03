@@ -30,6 +30,10 @@
         box-sizing: border-box;
         position: relative;
     }
+    a
+    {
+        cursor: pointer;
+    }
 </style>
 <header>
     <nav>
