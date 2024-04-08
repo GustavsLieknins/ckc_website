@@ -46,6 +46,9 @@
                 <input type="text" name="place" value='<?= htmlspecialchars($events[0]["place"]) ?>'>
             </label>
             <button name="id" value=<?= $_GET["id"] ?> >Make changes</button>
+            <?php if(isset($errors["any_input"])){ ?>
+            <p class="invalid-data"><?= $errors["any_input"] ?></p>
+            <?php } ?>
         </form>
     <?php }else{; ?>
     <form>

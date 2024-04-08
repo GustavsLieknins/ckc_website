@@ -2,6 +2,7 @@
 
 require "Database.php";
 $config = require "config.php";
+require "Validator.php";
 
 
 
@@ -9,13 +10,9 @@ $config = require "config.php";
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
     $errors = [];
-    if(trim($_POST["name"]) == "" || trim($_POST["description"]) == "" )
+    if(!Validator::string($_POST["name"], min_len: 1, max_len: 255) || !Validator::string($_POST["description"], min_len: 1, max_len: 255))
     {
-        $errors["name-empty"] = "Title cannot be empty";
-    }
-    if(strlen($_POST["name"]) > 255 || strlen($_POST["description"]) > 255)
-    {
-        $errors["name-long"] = "This is tooooo long";  
+        $errors["name-empty"] = "Title or description cannot be empty";
     }
 
     if(empty($errors))
@@ -32,7 +29,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $query = "SELECT * FROM ckc_events";
         $params = [];
     }    
-    }
+}
 
 
 require "views/add-kolektivi.view.php";
